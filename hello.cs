@@ -44,6 +44,28 @@ public class Startup {
     } // end function driver()
 
 } // end class Startup
-    
+
+//==========
+public class Useful {
+
+    //----------
+    public static void dumpStringArray(
+        string [] args,
+        string array_label
+    ) {
+
+        if(args.Length!=0) {
+            Console.WriteLine(array_label);
+            for(int ii=0;ii<args.Length;ii++) {
+                Console.WriteLine("["+ii+"]="+args[ii]);
+            }
+            Console.WriteLine();
+        }
+        return;
+    } // end dumpStringArray()
+
+} // end class Useful
+
+
 } // end namespace namespacename
 
